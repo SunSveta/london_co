@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 london_co = {
      "r1": {
          "location": "21 New Globe Walk",
@@ -23,4 +24,7 @@ london_co = {
           "routing": True
      }
 }
+
+ans = input("Введите имя устройства: ")
+print(london_co[ans])
 
