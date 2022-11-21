@@ -26,7 +26,11 @@ london_co = {
 }
 
 ans = input("Введите имя устройства: ")
-ans_param = input("Введите имя параметра: ")
-print(london_co[ans][ans_param])
+ans_param = input(f"Введите имя параметра {list(london_co[ans].keys())}: ")
+if ans_param in list(london_co[ans].keys()):
+        print(london_co[ans][ans_param])
+else:
+        print("Нет такого параметра!")
+
 
 
